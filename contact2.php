@@ -1,0 +1,127 @@
+<?php
+include("connect.php");
+error_reporting(0);
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="bg">
+      <nav class="navigation max-w1 m-auto">
+        <div class="nav-l">
+          <!-- <span> <a href="blog.html"> My Blog</a> </span> -->
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="/website/contact.html">Contact</a></li> -->
+            <li><a href="blog.html">Contact</a></li>
+            
+            <li></li>
+          </ul>
+        </div>
+    </nav>
+<!-- <div class="contact-content">
+        <h2>Form-box</h2>
+    </div> -->
+    
+    <div class="containerf">
+        <form>
+          <label for="fname">First Name</label>
+          <td><input type="text"  name="firstname" placeholder="Your name.."></td>
+      
+          <label for="lname">Last Name</label>
+          <input type="text"  name="lastname" placeholder="Your last name..">
+          <label for="lname">Email-Id</label>
+          <input type="text"  name="email" placeholder="Your Email-Id">
+      
+          <!-- <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select> -->
+      
+          <label for="subject">Subject</label>
+          <textarea  name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" name="save" value="Submit">
+        </form>
+    </div>
+
+        <!-- <div class="nav-r"> -->
+          <!-- <input class="form-in" type="text" placeholder="Keyword search" />
+        <button class="btn">Search</button> -->
+        </div>
+      </nav>
+    
+      <!-- class can be used multiple -->
+      <!-- <div class="content max-w1 m-auto">
+        <h1 class="hero-head">
+            How you do anything <br>
+            is how you can do everything
+          </h1>
+          <br />
+          <p class="hero-des">
+            There’s chaos? <br />
+            Art it, let your art and creativity take the shape. <br />
+            <br />
+            Lost in your dreams? <br />
+            Well, no artist tolerates reality <br /><br />
+            Too Frantic? Go about and do it anyway! <br />
+            Well, No this not about me trying topromote the <br> idea that Artwork is
+            a way of rescue or some sort of escapism, <br> but more
+            like…............... <a href="#blog">Continue reading</a>
+          </p>
+        </div>
+    </div>
+    <div class="footer max-w1 m-auto"></div>
+    <div class="box max-w1 m-auto">
+        <div class="con">
+            <h2>About me</h2>
+            <p>Hi, I’m Anushree and I am an artist. <br>
+                I create art and journal too. 
+                Most of the <br> time I do whatever brings me to life, <br>
+                and sharing this 
+                is definitely one of them. <br> Follow along as I paint my way through life. <br>
+                I am still a Beginner and I keep Beginning:|)</p>
+        </div>
+        <div class="img">
+            <img src="/img/IMG-0011.JPG" alt="">
+        </div> -->
+      <!--         
+    </div> -->
+    
+  </body>
+</html>
+
+<?php
+$fn = $_GET['firstname'];
+$ln =$_GET['lastname'];
+$em =$_GET['email'];
+$sub =$_GET['subject'];
+
+
+$query="INSERT INTO form VALUES('$fn','$ln','$em','$sub')";
+$data=mysqli_query($conn,$query);
+
+if($data)
+{
+	// echo "done";
+}
+else
+{
+	echo"not";
+}
+
+?>

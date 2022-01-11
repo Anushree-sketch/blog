@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,900&family=Nunito:ital,wght@0,200;0,300;0,500;0,700;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.navigation {
+  /* height: 74px; */
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content {
+  height: 95px;
+  /* background-color: blue; */
+}
+.footer {
+  height: 50px;
+  /* background-color: black; */
+}
+
+.form-c {
+}
+.nav-l {
+  font-size: 20px;
+  display: flex;
+  margin-top: 30px;
+}
+.nav-l li {
+  list-style: none;
+  margin: 0 34px;
+}
+.nav-l ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+.nav-l ul {
+  display: flex;
+  align-items: center;
+  margin: 0 77px;
+  font-size: 20px;
+}
+.hero-head {
+  margin-top: 10%;
+  font-weight: 300px;
+  line-height: 40px;
+  font-size: 20px;
+}
+.hero-head p {
+  line-height: 70px;
+  font-size: 20px;
+}
+.bg {
+  /* background-image: url(/img/imani-bahati-ZhoSk8W4lt8-unsplash.jpg); */
+
+  background-position: center;
+  background-size: cover;
+}
+
+.img {
+  width: 30%;
+  /* margin-left: 170px; */
+}
+.hero-des {
+  font-size: 20px;
+}
+.hero-head {
+  font-size: 40px;
+  font-weight: 1000px;
+}
+.nav-l a {
+  text-decoration: none;
+  color: black;
+}
+.bg {
+  /* background: url(/img/annie-spratt-Zxz01pNWGlE-unsplashab.jpg); */
+}
+/* .nav-r {
+  background: black;
+} */
+.z {
+  background-image: url(/img/phil-s-RIZ9q-v0iG4-unsplash.jpg);
+
+  background-position: center;
+  background-size: cover;
+}
+@media only screen and (max-width: 1000px) {
+  .nav-l {
+    flex-direction: column;
+  }
+}

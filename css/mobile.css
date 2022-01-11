@@ -1,0 +1,28 @@
+@media screen and (max-width: 800px) {
+  .navigation {
+    flex-direction: column;
+  }
+  .nav-l {
+    flex-direction: column;
+    text-align: center;
+
+    /* margin-bottom: 23px;
+    margin-top: 30px; */
+    word-spacing: inherit;
+    font-size: 2px;
+  }
+  .nav-l a {
+    font-size: 8px;
+    flex-direction: column;
+    text-align: end;
+    margin-bottom: 23px;
+    margin-top: 30px;
+    word-spacing: inherit;
+    font-size: ;
+    list-style-type: circle;
+  }
+  .contact-content {
+    height: 200vh;
+    font-size: 8px;
+  }
+}

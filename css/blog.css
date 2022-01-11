@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,900&family=Nunito:ital,wght@0,200;0,300;0,500;0,700;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&display=swap');
+
+.post {
+  width: 2px;
+  height: 2px;
+}
+
+.idp img {
+  height: 600px;
+  width: 500px;
+  /* vertical-align: middle; */
+  border-radius: 60px;
+  /* align-items: center; */
+  margin-left: 25%;
+  margin-top: 5%;
+}
+.idp {
+  align-items: center;
+  justify-content: center;
+}
+.hero-des p {
+  font-size: 20px;
+  font-weight: 20px;
+}
+.two p {
+  margin-top: 5%;
+  font-size: 20px;
+  font-weight: 20px;
+  padding-bottom: 100px;
+}
+.hero-head1 {
+  padding-top: 80px;
+  font-size: 60px;
+  padding-bottom: 50px;
+}
